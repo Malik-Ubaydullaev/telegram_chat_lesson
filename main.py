@@ -1,5 +1,5 @@
 import json
 
-f = open('result.json').read()
+f = open('result.json',encoding='utf8').read()
 data = json.loads(f)
-print(data['name'])
+print(len(data['messages']))
